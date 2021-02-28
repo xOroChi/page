@@ -1,0 +1,168 @@
+body {
+    background-size: cover;
+    background-image: url(Bilder/Hintergrundbild.jpg);
+}
+
+.Navigation{
+    float: left;
+}
+
+a:link{
+    color: white;
+    text-decoration: underline;
+}
+
+a:visited{
+    color:blueviolet;
+    text-decoration: underline;
+}
+
+a:hover{
+    color:darkturquoise;
+    text-decoration: underline;
+}
+
+.Anmeldung{
+    text-align: center;
+    float:right;
+    padding-top: 20px;
+}
+
+
+#Gesamt {
+    margin-left: auto;
+    position: absolute;
+    left: 115px;
+    right: 115px;
+    margin-right: auto;
+
+}
+
+
+#Logo {
+    padding: 2%;
+    text-align:center;
+}
+
+th{
+    width: 800px;
+    height: 250px;
+}
+
+h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:white;
+    font-family: Arial;
+}
+
+p{
+    color: white;
+    font-family: Arial;
+}
+
+#container{
+    margin-left: auto;
+    left: 115px;
+    right: 115px;
+    margin-right: auto;
+}
+
+.Cpu{
+    margin-bottom: 20px;
+    text-align: center;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.Motherboard{
+    margin-bottom: 15px;
+    text-align: center;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.Ram{
+    margin-bottom: 15px;
+    text-align: center;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#container2{
+    margin-left: auto;
+    left: 115px;
+    right: 115px;
+    margin-right: auto;
+}
+
+.Gehäuse{
+    margin-bottom: 25px;
+    text-align: center;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.Gpu{
+    margin-bottom: 23px;
+    text-align: center;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.Netzteil{
+    margin-bottom: 25px;
+    text-align: center;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+@media screen and (max-width: 500px){
+    
+    .Cpu, .Motherboard, .Ram, .Gehäuse, .Gpu, .Netzteil{
+        float: left;
+
+    }
+}
+
+@media print{
+
+    .Anmeldung, .Navigation{
+        display: none;
+    }
+
+    img{
+        width: 60%;
+        height: 40%;
+    }
+    
+    .Cpu, .Motherboard, .Ram, .Gehäuse, .Gpu, .Netzteil{
+        margin-top: 100px;
+        border-color: black;
+        border-radius: 2,5px;
+    } 
+
+    .Cpu{
+        padding-bottom: 5px;
+    }
+
+    #container2{
+        margin-top: 400px;
+    }
+
+    .Motherboard{
+        padding-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .Gpu{
+        padding-top: 55px;
+    }
+
+}
