@@ -1,0 +1,172 @@
+
+/*Hintergrundbild eingefügt und Bild auf reale Größe des Hintergrundbilds gestellt*/
+body {
+    background-size: auto;
+    background-image: url(Bilder/Hintergrundbild.jpg);
+    height: 8000px;
+}
+
+/*Hyperlinks an das Linke element geordnet*/
+.Navigation{
+    float: left;
+}
+
+/*Hyperlinks Standartfarbe weiß und unterstrichen*/
+a:link{
+    color: white;
+    text-decoration: underline;
+}
+
+/*Wenn besucht Hyperlinks Standartfarbe blueviolet und unterstrichen*/
+a:visited{
+    color:blueviolet;
+    text-decoration: underline;
+}
+
+/*Wenn man mit der Maus draufgeht Hyperlinks Standartfarbe türkis und unterstrichen*/
+a:hover{
+    color:darkturquoise;
+    text-decoration: underline;
+}
+
+/*Anmeldemenü an das rechte element geordnet, Zentriert und mit margin nach unten verschoben*/
+.Anmeldung{
+    text-align: center;
+    float:right;
+    padding-top: 20px;
+}
+
+/*Einen weißen Rahmen und mit einer max Breite von 500px erstellt.
+  Mit left/right in die Mitte gesetzt. Text Zentriert mit Schriftfarbe weiß*/
+#Gesamt {
+    margin-left: auto;
+    position: absolute;
+    left: 115px;
+    right: 115px;
+    margin-right: auto;
+    max-width: 500px;
+    color: white;
+    padding: 2%;
+    text-align:center;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+/*Text Zentriert Schriftfarbe weiß und mit paddind-top den Innenabstand zum Titel gemacht*/
+p{
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 115px;
+    right: 115px;
+    padding-top: 175px;
+    text-align: center;
+    color: white;
+
+}
+
+/*Breite/Höhe für die Tabelle eingestellt*/
+th{
+    width: 800px;
+    height: 250px;
+}
+
+/*Überschriften der Tabelle auf weiß und Arial gesetzt*/
+h2{
+    color:white;
+    font-family: Arial;
+}
+
+/*Position des Zwischen Div-Container gesetzt (in die Mitte)*/
+#container{
+    margin-left: auto;
+    left: 115px;
+    right: 115px;
+    margin-right: auto;
+}
+
+/*Div-Container Zentriert und einen Weißen Rahmen drum gemacht mit einer Breite von 2px
+  Innen/Außenabstand verändert*/
+.Cpu{
+    margin-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+/*Div-Container Zentriert und einen Weißen Rahmen drum gemacht mit einer Breite von 2px
+  Außenabstand verändert*/
+.Motherboard{
+    margin-bottom: 15px;
+    text-align: center;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+/*Div-Container Zentriert und einen Weißen Rahmen drum gemacht mit einer Breite von 2px
+  Außenabstand verändert*/
+.Ram{
+    margin-bottom: 15px;
+    text-align: center;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+/*Position des Zwischen Div-Container gesetzt (in die Mitte)*/
+#container2{
+    margin-left: auto;
+    left: 115px;
+    right: 115px;
+    margin-right: auto;
+}
+
+/*Div-Container Zentriert und einen Weißen Rahmen drum gemacht mit einer Breite von 2px
+  Außenabstand verändert*/
+.Gehäuse{
+    margin-bottom: 25px;
+    text-align: center;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+/*Div-Container Zentriert und einen Weißen Rahmen drum gemacht mit einer Breite von 2px
+  Außenabstand verändert*/
+.Gpu{
+    margin-bottom: 25px;
+    padding-top: 43px;
+    text-align: center;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+/*Div-Container Zentriert und einen Weißen Rahmen drum gemacht mit einer Breite von 2px
+  Außenabstand verändert*/
+.Netzteil{
+    margin-bottom: 25px;
+    text-align: center;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.Hardware{
+    float:left;
+    color:white;
+    
+}
+
+/*Div-Container Zentriert und Innenabstand vergrößert*/
+.Einkaufsliste{
+    margin-right: 800px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+

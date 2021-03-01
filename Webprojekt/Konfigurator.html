@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="Stylesheet" href="Konfigutator.css">
+
+		    <title>Konfigurator</title>
+
+		    <script>
+
+			    "use strict";
+
+              /*Funktion für die Einkaufszettel*/
+            function fHardware(){
+
+                /*Variablen für alle 6 PC-Teile und die Auswahlboxen deklariert*/
+              var vCPU = document.getElementById("idCpu").value; 
+              var vMotherboard = document.getElementById("idMotherboard").value;
+              var vRam = document.getElementById("idRam").value;
+              var vGehäuse = document.getElementById("idGehäuse").value;
+              var vGPU = document.getElementById("idGpu").value;
+              var vNetzteil = document.getElementById("idNetzteil").value;
+              var vAusgabe = " ";
+
+                    /*vAusgabe deklariert*/
+                  vAusgabe = vAusgabe + vCPU + "</br>";
+                  vAusgabe = vAusgabe + vMotherboard + "</br>";
+                  vAusgabe = vAusgabe + vRam + "</br>";
+                  vAusgabe = vAusgabe + vGPU + "</br>";
+                  vAusgabe = vAusgabe + vNetzteil + "</br>" + "</br>";
+                  vAusgabe = vAusgabe + " Wenn sie alles ausgewählt haben, wählen sie ihre Zahlungsmethode !";
+
+                    /*vAusgabe einem div-Element zugewiesen*/
+                  document.getElementById("idEinkaufszettel").innerHTML = vAusgabe;
+            }
+          
+              /*Funktion für die Einkaufliste*/
+            function fEinkaufsliste() {
+
+                  /*variabel für das Pop Up deklariert*/
+                var vPopup; 
+
+                  /*vPopup einen Wert gegeben*/
+                vPopup= "Seite bitte nicht neuladen, sie werden in kürze weitergeleitet";
+
+                  /*Ein pop Up befehl erstellt*/
+                alert(vPopup);
+            }
+
+        </script>
+
+	  </head>
+
+
+
+	  <body>
+            <!--Zwischen Div-Container für den Titel-->
+        <div id="Gesamt">
+
+            <!--Titel-->
+          <h1>Konfigurator</h1>
+
+        </div> 
+            <!--Text-->
+          <h2><p>Unsere Produkte sind alle miteinander kompatibel !</p></h2>
+
+            <!--Div-Container für die Hyperlinks-->
+        <div class="Navigation" >
+
+              <a href="PC-Teile.html">PC-Teile Übersicht</a>
+              <a href="Konfigurator.html">Konfigurator</a>
+              
+        </div>
+        
+            <!--Div-Container für die Anmeldefunktion/Inputboxen-->
+        <div class="Anmeldung">
+
+            <input id="idName" type="text" value="Name">
+</br>
+</br>
+            <input id="idName" type="text" value="Passwort">
+</br>
+</br>           
+            <button onClick="f();">Anmelden</button>
+
+        </div>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>     <!--Zwischen Div-Container für die erste Tabelle-->
+        <div id="container">
+
+            <!--Tabelle 1 wird geöffnet-->
+          <table>
+
+            <tr>
+                <!--Inhalt des ersten Div-Container für die Tabelle 1-->
+              <th><div class="Cpu"><h2>Cpu</h2>
+
+              <img src="Bilder/Cpu-image.jfif" width="300" height="168">
+</br>
+</br>
+              <select id="idCpu" required>
+
+                  <!--Auswahlboxen erstellt-->
+                <option>Bitte auswählen</option>
+                <option>AMD Ryzen 9 5900X: 669 €</option>
+                <option>AMD Ryzen 5 5600X: 328 €</option>
+                <option>AMD Ryzen 7 5800X: 428 €</option>
+                <option>AMD Ryzen 7 3800XT: 319 €</option>
+
+              </select>
+                
+              </div></th>
+
+                
+                  <!--Inhalt des zweiten Div-Container für die Tabelle 1-->
+            <th><div class="Motherboard"><h2>Motherboard</h2>
+
+                <img src="Bilder/motherboard-image.png" width="400" height="190">
+</br>
+</br>
+              <select id="idMotherboard" required>
+
+                  <!--Auswahlboxen erstellt-->
+                <option>Bitte auswählen</option>
+                <option>MSI B550-A Pro: 118 €</option>
+                <option>MSI B450 Tomahawk Max: 93,80 €</option>
+                <option>MSI B450-A Pro MAX: 72,66 €</option>
+                <option>MSI MAG B550 Tomahawk: 154 €</option>
+
+              </select>
+            
+              </div></th>
+
+                  <!--Inhalt des dritten Div-Container für die Tabelle 1-->
+              <th><div class="Ram"><h2>Ram</h2>
+
+              <img src="Bilder/ram-image.png" width="400" height="190">
+</br>
+</br>            
+              <select id="idRam" required>
+
+                  <!--Auswahlboxen erstellt-->
+                <option>Bitte auswählen</option>
+                <option>16GB G.Skill Aegis: 76 €</option>
+                <option>16GB G.Skill RipJaws V: 79 €</option>
+                <option>16GB Corsair Vengeance LPX LP: 84,85 €</option>
+                <option>32GB G.Skill Trident Z Neo: 216 €</option>
+
+              </select>
+
+              </div></th>
+
+            </tr>   
+
+            <!--Tabelle 1 wird geschlossen-->
+          </table>
+        
+        </div>
+
+</br>
+</br>
+</br>    
+</br>
+          <!--Zwischen Div-Container für die zweite Tabelle-->
+        <div id="container2">
+
+            <!--Tabelle 2 wird geöffnet-->
+          <table>
+
+            <tr>
+
+                <!--Inhalt des ersten Div-Container für die Tabelle 2-->
+              <th><div class="Gehäuse"><h2>Gehäuse</h2>
+
+              <img src="Bilder/gehäuse-image.jfif" width="225" height="225">
+</br>    
+</br>          
+              <select id="idGehäuse" required>
+
+                    <!--Auswahlboxen erstellt-->
+                  <option>Bitte auswählen</option>
+                  <option>NZXT H510 Midi Tower: 66 €</option>
+                  <option>be quiet! Pure Base 600: 69 €</option>
+                  <option>Corsair Crystal 680X: 228,81 €</option>
+                  <option>Azza Thor 320 DH: 77,61 €</option>
+
+              </select>
+
+              </div></th>
+            
+                <!--Inhalt des zweiten Div-Container für die Tabelle 2-->
+              <th><div class="Gpu"><h2>Gpu</h2>
+
+              <img src="Bilder/gpu-image.jfif" width="279" height="181">
+</br>
+</br>
+              <select id="idGpu" required>
+
+                    <!--Auswahlboxen erstellt-->
+                  <option>Bitte auswählen</option>
+                  <option>NVIDIA GEFORCE RTX 3090: 1,549 €</option>
+                  <option>NVIDIA GEFORCE RTX 3070: 519 €</option>
+                  <option>NVIDIA GEFORCE RTX 3060 TI: 419 €</option>
+                  <option>NVIDIA GEFORCE RTX 3080: 719 €</option>
+
+                </select>
+
+              </div></th>
+              
+                <!--Inhalt des dritten Div-Container für die Tabelle 2-->
+              <th><div class="Netzteil"><h2>Netzteil</h2>
+
+              <img src="Bilder/netzteil-image.jfif" width="225" height="225">
+</br> 
+</br>  
+                <select id="idNetzteil">
+
+                    <!--Auswahlboxen erstellt-->
+                  <option>Bitte auswählen</option>
+                  <option>be quiet! Straight Power 11: 214,90 €</option>
+                  <option>Seasonic Prime TX: 329,90 €</option>
+                  <option>Corsair HX1000: 199,90 €</option>
+                  <option>Corsair RM1000X: 181,90 €</option>
+
+                </select>
+
+              </div></th>
+
+            </tr>
+
+            <!--Tabelle 2 wird geschlossen-->
+          </table>
+
+        </div>
+
+        <div class= "Hardware">
+        
+                <button onClick="fHardware();">Ausgewählte Hardware anzeigen</button>
+        </br>
+        </br>
+                <div id="idEinkaufszettel"></div>
+
+        </div>
+
+          <!--Div-Container Einkaufliste erstellt-->
+        <div class= "Einkaufsliste">
+
+                <select id="Einkaufsliste">
+
+                    <!--Auswahlboxen erstellt-->
+                  <option>Bitte auswählen</option>
+                  <option>Paypal</option>
+                  <option>Kartenzahlung</option>
+                  <option>Überweisung</option>
+                  <option>Vorkasse</option>
+
+                </select>
+
+                  <!--Button für Einkaufsliste-->
+                <button onClick="fEinkaufsliste();">Weiter zur Rechnungsadresse</button>
+
+        </div>
+         
+    </body>
+
+</html>
