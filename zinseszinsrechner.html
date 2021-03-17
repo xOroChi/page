@@ -1,0 +1,63 @@
+<html>
+     <head>
+     <title>Zinneszinsrechner</title>
+
+     <meta http-equiv="Conten-Type" content="text/html; charset=utf-8">
+
+     <script>
+
+     "use strict";
+     function fZinneszinsrechner () {
+
+     var vZinssatz = parseFloat (document.getElementById("idZinssatz").value);
+     var vKapital = parseFloat (document.getElementById("idKapital").value);
+     var vLaufzeit = parseFloat (document.getElementById("idLaufzeit").value);
+     var vZinsen;
+     var vKapitalende;
+     var vStart = 0;
+
+
+
+     var vAusgabe = "";
+
+     vAusgabe = vAusgabe + "<table border = 1> <br>";
+
+     vAusgabe = vAusgabe + "<tr><th>Jahr</th><th>Kapital am 1.1</th><th>Zins am 31.12</th><th>Kapital am 31.12</th></tr>";
+
+     while (vStart <= vLaufzeit) {
+
+          vZinsen = vKapital * (vZinssatz / 100);
+          vKapitalende = vKapital + vZinsen;
+
+     vAusgabe = vAusgabe + "<tr><td>" + vStart + "</td><td>" + vKapital + "</td><td>" + vZinsen + "</td><td>" + vKapitalende;
+
+     vStart++;
+     
+     }
+
+     vAusgabe = vAusgabe + "</table>" + "<br>";
+
+     document.getElementById("idAusgabe").innerHTML = vAusgabe;
+
+    }
+
+     </script>
+
+     </head>
+
+
+     <body>
+     <h1>Zinneszinsrechner</h1>
+
+     Zinssatz : <input id="idZinssatz" type="text" value="2"><br><br>
+
+     Kapital : <input id="idKapital" type="text" value="1000"><br><br>
+
+     Laufzeit: <input id="idLaufzeit" type="text" value="5"><br><br>
+
+     <button onClick="fZinneszinsrechner()">Berechnen</button>
+
+     <div id="idAusgabe"></div>
+
+     </body>
+     </html>
